@@ -9,6 +9,18 @@ module.exports = {
         // filename: 'main.js',
         clean: true
     },
+    module: {
+        rules: [
+            {
+                test: /\.s?css$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ]
+            }
+        ]
+    },
     plugins: [
         new HtmlPlugin({
             template: './index.html'
