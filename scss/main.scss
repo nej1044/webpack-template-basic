@@ -4,6 +4,7 @@ $color--white: #fff;
 body {
     background-color: royalblue;
     h1 {
+        display: flex;
         color: $color--white;
         font-size: 40px;
     }
